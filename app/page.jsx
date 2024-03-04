@@ -1,7 +1,7 @@
 import TicketCard from "./(components)/TicketCard";
 import { Toaster } from "sonner";
 
-async function getAllTickets() {
+export async function getAllTickets() {
   try {
     const res = await fetch("http://localhost:3000/api/Tickets/", {
       cache: "no-store",
